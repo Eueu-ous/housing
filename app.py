@@ -5,7 +5,7 @@ import seaborn as sns
 sns.set()
 
 
-st.title('Clifornia Housing Data(1990)')
+st.title('California Housing Data(1990)')
 df = pd.read_csv('housing.csv')
 
 # note that you have to use 0.0 and 40.0 given that the data type of population is float
@@ -19,7 +19,7 @@ location_filter = st.sidebar.multiselect(
 
 # "Low(<=2.5)","Medium (>2.5 & <4.5)","High"
 income_level = st.sidebar.radio(
-    "select income level",
+    "Choose income level",
     ("Low","Medium","High")
 
 )
